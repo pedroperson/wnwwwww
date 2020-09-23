@@ -1,0 +1,117 @@
+body {
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+section {
+  max-width: 32rem;
+  margin: 1rem auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.wiggly {
+  font-weight: 400;
+  color: #79b246;
+  background: url("/static/images/wave_underline.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 20px 4px;
+  background-position: bottom;
+  -webkit-animation: wavy-underline 30s linear infinite,
+    hue-rotate 3s linear infinite alternate, blur 5s linear infinite alternate;
+  animation: wavy-underline 30s linear infinite,
+    hue-rotate 3s linear infinite alternate, blur 5s linear infinite alternate;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+@-webkit-keyframes wavy-underline {
+  from {
+    background-position: 2px bottom;
+  }
+  to {
+    background-position: 500px bottom;
+  }
+}
+
+@keyframes wavy-underline {
+  from {
+    background-position: 2px bottom;
+  }
+  to {
+    background-position: 500px bottom;
+  }
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  10% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  10% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@-webkit-keyframes hue-rotate {
+  from {
+    color: #d7feff;
+  }
+  to {
+    color: #ffd7fe;
+  }
+}
+@keyframes hue-rotate {
+  from {
+    color: #d7feff;
+  }
+  to {
+    color: #ffd7fe;
+  }
+}
+b {
+  font-weight: 800;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 0px 0px #5cdde1, 1px 1px #605ce1, 2px 2px #e15cdd,
+    3px 3px #e1605c, 4px 4px #dde15c, 5px 5px #5ce160, 6px 6px #5cdde1,
+    7px 7px #605ce1;
+}
+aside {
+  display: block;
+  font-size: 0.8rem;
+  color: #bbb;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  line-height: 1.4em;
+}
